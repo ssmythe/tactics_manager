@@ -6,7 +6,7 @@ The Chess Tactics Manager is a Python program designed to help Lichess.org playe
 
 ## Features
 
-- **Theme Categorization**: Tactics are grouped into logical categories, such as "Core Tactical Motifs" and "Common Mating Patterns."
+- **Theme Categorization**: Tactics are grouped into logical categories, such as "Core Tactical Motifs" and "Common Mating Patterns." See: [Lichess Puzzle Themes](https://lichess.org/training/themes)
 - **Difficulty Tracking**: Tracks progress for each theme across five difficulty levels (`Easiest`, `Easier`, `Normal`, `Harder`, `Hardest`).
 - **Recall Intervals**: Recommends themes based on when they were last practiced and their mastery level.
 - **Progress Updates**: Allows users to log success rates and puzzle performance to adjust recall and difficulty progress.
