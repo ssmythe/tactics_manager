@@ -71,7 +71,7 @@ The Chess Tactics Manager is a Python program designed to help Lichess.org playe
 - **reset_progress.sh**: A utility script to delete all progress data after user confirmation.
 - **run.sh**: A wrapper to run the tactics manager program.
 - **tests.sh**: A wrapper to run the pytest tests for the tactics manager program.
-- **themes.html**: An HTML document with quick links to all the themes on Lichess.org
+- **index.html**: An HTML document with quick links to all the themes on Lichess.org
 
 ---
 

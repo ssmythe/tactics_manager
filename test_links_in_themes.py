@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pytest
 
 # Path to the themes.html file
-HTML_FILE = "themes.html"
+HTML_FILE = "index.html"
 
 # Fixture to parse the HTML file
 @pytest.fixture
