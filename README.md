@@ -1,6 +1,8 @@
-# Chess Tactics Manager
+# Tactics Manager
 
-The Chess Tactics Manager is a Python program designed to help Lichess.org players systematically practice and improve their tactical skills. It categorizes tactical themes, tracks progress across different difficulty levels, and prioritizes themes based on recall intervals and mastery.
+The Tactics Manager is a Python program designed to help Lichess.org players systematically practice and improve their tactical skills. It categorizes tactical themes, tracks progress across different difficulty levels, and prioritizes themes based on recall intervals and mastery.
+
+[Themes supported by Tactics Manager](https://ssmythe.github.io/tactics_manager/)
 
 ---
 
