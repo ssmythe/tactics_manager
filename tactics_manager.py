@@ -70,7 +70,7 @@ THEMES_BY_CATEGORY = {
         "Equality puzzles",
         "Advantage puzzles",
         "Crushing puzzles",
-        "Castling and En passant puzzles"
+        "Castling"
     ]
 }
 INTERVALS = {
@@ -194,13 +194,16 @@ def update_theme_difficulty_progress(data, theme, correct):
 
 # Display themes with numbers
 
-def display_themes_with_numbers():
+def display_themes_with_numbers(data):
     print("Select a theme:")
     index = 1
     for category, themes in THEMES_BY_CATEGORY.items():
         print(f"\n{category}:")
         for theme in themes:
-            print(f"{index}. {theme}")
+            last_attempted = data["themes"][theme]["last_attempted"]
+            success_rate = data["themes"][theme]["success_rate"]
+            current_difficulty = get_theme_difficulty(data, theme)
+            print(f"{str(index).ljust(3)} {theme.ljust(25)} [{current_difficulty} {last_attempted} {success_rate}/10]")
             index += 1
 
 # Main logic
@@ -225,7 +228,7 @@ if __name__ == "__main__":
     # Update progress after a session
     update = input("Did you complete a theme or puzzle session? (y/n): ").strip().lower()[0]
     if update == "y":
-        display_themes_with_numbers()
+        display_themes_with_numbers(data)
         try:
             theme_index = int(input("Enter the number of the theme you practiced: ").strip())
             theme_list = [theme for themes in THEMES_BY_CATEGORY.values() for theme in themes]
